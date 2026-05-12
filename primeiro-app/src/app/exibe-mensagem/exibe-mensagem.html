@@ -1,15 +1,22 @@
-<form>
-  <label for="nome">Digite seu nome</label>
+<div class="container">
 
-  <input
-    id="nome"
-    name="nome"
-    type="text"
-    #nome
-    (keyup)="alterarMensagem(nome.value)"
-  >
-</form>
+  <h1>Bem-vindo</h1>
 
-<div class="msg">
-  <p>{{mensagem}}</p>
+  <form>
+    <label for="nome">Digite seu nome</label>
+
+    <input
+      id="nome"
+      name="nome"
+      type="text"
+      #nome
+      (keyup)="alterarMensagem(nome.value)"
+      placeholder="Seu nome..."
+    >
+  </form>
+
+  <div class="msg">
+    <p>{{mensagem}}</p>
+  </div>
+
 </div>
